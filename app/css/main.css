@@ -72,6 +72,9 @@ p {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
 }
+header {
+  background: #fff;
+}
 header div div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -143,4 +146,105 @@ header div div section button {
   background: #1d275a;
   padding: 3px 13px 0 17px;
   cursor: pointer;
+}
+header hr {
+  border: 1px solid #e2ddd8;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  padding-top: 4px;
+  margin-top: 43px;
+}
+header div nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+header div nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 13px 0 20px 10px;
+  padding: 0;
+  list-style: none;
+}
+header div nav ul li a {
+  display: block;
+  text-transform: uppercase;
+  font-family: 'futuraLight';
+  font-size: 14px;
+  color: #5a5a5a;
+  text-decoration: none;
+  position: relative;
+}
+header div nav ul li a:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background: #1c285b;
+  top: -26px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+header div nav ul li a:hover {
+  color: #1c285b;
+}
+header div nav ul li a:hover:before {
+  width: 100%;
+}
+div.maincontent section div.maincontent__parallax {
+  min-height: 750px;
+  background: transparent;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -450px;
+  width: 135%;
+  z-index: -1;
+  left: -240px;
+}
+div.maincontent section div.maincontent__parallax div {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: #1d275a;
+  height: 68px;
+  bottom: -1px;
+}
+div.maincontent section div.maincontent__parallax div div.container h1 {
+  content: '';
+  position: absolute;
+  font-family: 'futuraLight';
+  font-size: 34px;
+  text-transform: uppercase;
+  left: 387px;
+  bottom: -10px;
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+div.maincontent .style {
+  background: red;
+  height: 500px;
 }

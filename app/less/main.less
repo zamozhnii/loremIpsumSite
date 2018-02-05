@@ -26,6 +26,7 @@
 @futuraCyrRegular: 'futuraCyrRegular';
 @containerWidth: 1155px;
 @descrLinColor: #1c285b;
+@backgroundParallax: #1d275a;
 
 * {
     box-sizing: border-box;
@@ -65,6 +66,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 header {
+    background: #fff;
     div {
         div {
             display: flex;
@@ -122,11 +124,100 @@ header {
                     line-height: 25px;
                     text-transform: uppercase;
                     color: #fff;
-                    background: #1d275a;
+                    background: @backgroundParallax;
                     padding: 3px 13px 0 17px;
                     cursor: pointer;
                 }
             }
         }      
+    }
+    hr {
+        border: 1px solid #e2ddd8;
+        border-right: none;
+        border-left: none;
+        width: 100%;
+        padding-top: 4px;
+        margin-top: 43px;
+    }
+    div {
+        nav {
+            display: flex;
+            flex-flow: column wrap;
+            ul {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                margin: 13px 0 20px 10px;
+                padding: 0;
+                list-style: none;
+                li {
+                    a {
+                        display: block;
+                        text-transform: uppercase;
+                        font-family: @futuraLight;
+                        font-size: 14px;
+                        color: #5a5a5a;
+                        text-decoration: none;
+                        position: relative;
+                    }
+                    a:before {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 4px;
+                        background: @descrLinColor;
+                        top: -26px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: width .2s ease-in-out;
+                    }
+                    a:hover {
+                        color: @descrLinColor;
+                    }
+                    a:hover:before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+div.maincontent {
+    section {
+        div.maincontent__parallax {
+            min-height: 750px;
+            background: transparent;
+            position: relative;
+            align-items: center;
+            top: -450px;
+            width: 135%;
+            z-index: -1;
+            left: -240px;
+            div {
+                content: '';
+                position: absolute;
+                width: 100%;
+                background: @backgroundParallax;
+                height: 68px;
+                bottom: -1px;
+                div.container {
+                    h1 {
+                        content: '';
+                        position: absolute;
+                        font-family: @futuraLight;
+                        font-size: 34px;
+                        text-transform: uppercase;
+                        left: 387px;
+                        bottom: -10px;
+                        color: #fff;
+                        letter-spacing: 0.3px;
+                    }
+                }
+            }
+        }
+    }
+    .style {
+        background: red;
+        height: 500px;
     }
 }
