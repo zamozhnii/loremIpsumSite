@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'futuraBold';
+    src: url('../fonts/futura-md-bt-bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'futuraLight';
+    src: url('../fonts/futura-md-bt-light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'futuraRegular';
+    src: url('../fonts/futura-md-bt-regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'futuraCyrBold';
+    src: url('../fonts/futura-md-cyr-bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'futuraCyrRegular';
+    src: url('../fonts/futura-md-cyr-regular.ttf') format('truetype');
+}
+
+@futuraBold: 'futuraBold';
+@futuraLight: 'futuraLight';
+@futuraRegular: 'futuraRegular';
+@futuraCyrBold: 'futuraCyrBold';
+@futuraCyrRegular: 'futuraCyrRegular';
+@containerWidth: 1155px;
+@descrLinColor: #1c285b;
+
+* {
+    box-sizing: border-box;
+}
+
+/**
+*
+* Adjustment settings
+*
+**/
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.maincontent {
+    flex: 1 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+.container {
+    width: @containerWidth;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header {
+    div {
+        div {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 6px;
+            figure{
+                margin: 0;
+                //padding-left: 13px;
+                span {
+                    width: 206px;
+                    display: block;
+                    margin: 0;
+                    img {
+                        padding-top: 10px;
+                        width: 100%;
+                    }
+                }
+                figcaption {
+                    h1 {
+                        margin: 0;
+                        font-family: @futuraLight;
+                        font-size: 24px;
+                        line-height: 23px;
+                        text-transform: uppercase;
+                        color: @descrLinColor;
+                        padding-left: 10px;
+                        font-stretch: ultra-expanded;
+                        letter-spacing: 3.7px;
+                    }
+                }
+            }
+            section {
+                padding-top: 73px;
+                display: flex;
+                justify-content: space-between;
+                p { 
+                    margin: 0;
+                    font-family: @futuraCyrRegular;
+                    font-size: 18px;
+                    color: @descrLinColor;
+                    padding: 11px 9px 0 0;
+                }
+                h2 {
+                    margin: 0;
+                    font-family: @futuraRegular;
+                    font-size: 26.04px;
+                    color: @descrLinColor;
+                    padding: 4px 18px 0 0;
+                }
+                button {
+                    height: 34px;
+                    border-radius: 4px;
+                    font-family: @futuraLight;
+                    font-size: 14px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    background: #1d275a;
+                    padding: 3px 13px 0 17px;
+                    cursor: pointer;
+                }
+            }
+        }      
+    }
+}

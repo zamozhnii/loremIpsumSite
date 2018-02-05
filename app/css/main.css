@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'futuraBold';
+  src: url('../fonts/futura-md-bt-bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'futuraLight';
+  src: url('../fonts/futura-md-bt-light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'futuraRegular';
+  src: url('../fonts/futura-md-bt-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'futuraCyrBold';
+  src: url('../fonts/futura-md-cyr-bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'futuraCyrRegular';
+  src: url('../fonts/futura-md-cyr-regular.ttf') format('truetype');
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/**
+*
+* Adjustment settings
+*
+**/
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+.maincontent {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+.container {
+  width: 1155px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+header div div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 6px;
+}
+header div div figure {
+  margin: 0;
+}
+header div div figure span {
+  width: 206px;
+  display: block;
+  margin: 0;
+}
+header div div figure span img {
+  padding-top: 10px;
+  width: 100%;
+}
+header div div figure figcaption h1 {
+  margin: 0;
+  font-family: 'futuraLight';
+  font-size: 24px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #1c285b;
+  padding-left: 10px;
+  font-stretch: ultra-expanded;
+  letter-spacing: 3.7px;
+}
+header div div section {
+  padding-top: 73px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header div div section p {
+  margin: 0;
+  font-family: 'futuraCyrRegular';
+  font-size: 18px;
+  color: #1c285b;
+  padding: 11px 9px 0 0;
+}
+header div div section h2 {
+  margin: 0;
+  font-family: 'futuraRegular';
+  font-size: 26.04px;
+  color: #1c285b;
+  padding: 4px 18px 0 0;
+}
+header div div section button {
+  height: 34px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-family: 'futuraLight';
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #1d275a;
+  padding: 3px 13px 0 17px;
+  cursor: pointer;
+}
