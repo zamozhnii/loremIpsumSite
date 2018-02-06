@@ -72,8 +72,18 @@ p {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
 }
+/**
+*
+* Header
+*
+**/
 header {
   background: #fff;
+  /**
+*
+* Header navigation
+*
+**/
 }
 header div div {
   display: -webkit-box;
@@ -178,7 +188,7 @@ header div nav ul {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 13px 0 20px 10px;
+  margin: 14px 0 20px 10px;
   padding: 0;
   list-style: none;
 }
@@ -212,6 +222,30 @@ header div nav ul li a:hover {
 header div nav ul li a:hover:before {
   width: 100%;
 }
+/**
+*
+* Big image (parallax)
+*
+**/
+div.maincontent {
+  /**
+*
+* image book
+*
+**/
+  /**
+*
+* Soc Network
+*
+**/
+}
+div.maincontent section {
+  /**
+*
+* Slider
+*
+**/
+}
 div.maincontent section div.maincontent__parallax {
   min-height: 350px;
   background: transparent;
@@ -230,7 +264,7 @@ div.maincontent section div.maincontent__parallax div {
   width: 100%;
   background: #1d275a;
   height: 68px;
-  bottom: -1px;
+  bottom: 0;
 }
 div.maincontent section div.maincontent__parallax div div.container h1 {
   content: '';
@@ -239,7 +273,7 @@ div.maincontent section div.maincontent__parallax div div.container h1 {
   font-size: 34px;
   text-transform: uppercase;
   left: 147px;
-  bottom: -10px;
+  bottom: -11px;
   color: #fff;
   letter-spacing: 0.3px;
 }
@@ -422,6 +456,11 @@ div.maincontent section.maincontent__social-networ hr.social-line-s {
   border-left: none;
   width: 627px;
 }
+/**
+*
+* Contacts and links
+*
+**/
 div.maincontent__address-company-newslet-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -665,4 +704,29 @@ div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wr
   border-bottom: 0;
   top: 16px;
   right: 16px;
+}
+/**
+*
+* Footer
+*
+**/
+footer {
+  background: #f4f3f3;
+  margin-top: 52px;
+}
+footer div section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer div section p {
+  font-size: 11px;
+  color: #959595;
+  font-family: 'futuraCyrRegular';
+  padding: 23px 0 0 10px;
 }

@@ -65,6 +65,13 @@ h1, h2, h3, h4, h5, h6, p {
     flex-flow: column nowrap;
 }
 
+/**
+*
+* Header
+*
+**/
+
+
 header {
     background: #fff;
     div {
@@ -139,6 +146,14 @@ header {
         padding-top: 4px;
         margin-top: 43px;
     }
+
+/**
+*
+* Header navigation
+*
+**/
+
+
     div {
         nav {
             display: flex;
@@ -147,7 +162,7 @@ header {
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: space-between;
-                margin: 13px 0 20px 10px;
+                margin: 14px 0 20px 10px;
                 padding: 0;
                 list-style: none;
                 li {
@@ -182,6 +197,13 @@ header {
         }
     }
 }
+
+/**
+*
+* Big image (parallax)
+*
+**/
+
 div.maincontent {
     section {
         div.maincontent__parallax {
@@ -198,7 +220,7 @@ div.maincontent {
                 width: 100%;
                 background: @backgroundParallax;
                 height: 68px;
-                bottom: -1px;
+                bottom: 0;
                 div.container {
                     h1 {
                         content: '';
@@ -207,13 +229,20 @@ div.maincontent {
                         font-size: 34px;
                         text-transform: uppercase;
                         left: 147px;
-                        bottom: -10px;
+                        bottom: -11px;
                         color: #fff;
                         letter-spacing: 0.3px;
                     }
                 }
             }
         }
+
+/**
+*
+* Slider
+*
+**/
+
         div.maincontent__slider {
             border: 9px solid #fff;
             content: '';
@@ -317,6 +346,13 @@ div.maincontent {
             }
         } 
     }
+
+/**
+*
+* image book
+*
+**/
+
     section.maincontent__fotogallery-descr-wrap {
         margin: 86px 0 0 10px;
         display: flex;
@@ -337,11 +373,19 @@ div.maincontent {
                 color: #5a5a5a;
                 text-transform: uppercase;
             }
+
             img {
                 margin-top: 15px;
             }
         }
     }
+
+/**
+*
+* Soc Network
+*
+**/
+
     section.maincontent__social-networ {
         margin-top: 68px;
         display: flex;
@@ -377,6 +421,13 @@ div.maincontent {
                 }
     }
 }
+
+/**
+*
+* Contacts and links
+*
+**/
+
 div.maincontent__address-company-newslet-wrap {
     display: flex;
     justify-content: space-between;
@@ -577,6 +628,29 @@ div.maincontent__address-company-newslet-wrap {
                 border-bottom: 0;
                 top: 16px;
                 right: 16px;
+            }
+        }
+    }
+}
+
+/**
+*
+* Footer
+*
+**/
+
+footer {
+    background: #f4f3f3;
+    margin-top: 52px;
+    div {
+        section {
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-size: 11px;
+                color: #959595;
+                font-family: @futuraCyrRegular;
+                padding: 23px 0 0 10px;
             }
         }
     }
