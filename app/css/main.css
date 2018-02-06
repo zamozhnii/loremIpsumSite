@@ -176,7 +176,7 @@ header div nav {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
 }
-header div nav ul {
+header div nav ul.header__navigation-list-wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -192,7 +192,50 @@ header div nav ul {
   padding: 0;
   list-style: none;
 }
-header div nav ul li a {
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item {
+  /**
+*
+* Header drop menu
+*
+**/
+}
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item ul.header__navigation-drop-menu {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s ease-in-out 0.2s, visibility 0.4s ease-in-out 0.2s;
+  -o-transition: opacity 0.4s ease-in-out 0.2s, visibility 0.4s ease-in-out 0.2s;
+  transition: opacity 0.4s ease-in-out 0.2s, visibility 0.4s ease-in-out 0.2s;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  background: #1d275a;
+  padding: 13px 60px 26px 25px;
+  top: 222px;
+}
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item ul.header__navigation-drop-menu li {
+  margin-top: 7px;
+}
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item ul.header__navigation-drop-menu li a {
+  text-decoration: none;
+  font-family: 'futuraLight';
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 15px;
+  color: #fff;
+}
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item ul.header__navigation-drop-menu li a:hover {
+  color: #c4ab2e;
+}
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item ul.header__navigation-drop-menu li img.hidden-image {
+  position: absolute;
+  top: 0;
+  right: -140px;
+  display: none;
+}
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item ul.header__navigation-drop-menu li:hover img.hidden-image {
+  display: block;
+}
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item a.navigation__link-item {
   display: block;
   text-transform: uppercase;
   font-family: 'futuraLight';
@@ -201,7 +244,7 @@ header div nav ul li a {
   text-decoration: none;
   position: relative;
 }
-header div nav ul li a:before {
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item a.navigation__link-item:before {
   content: '';
   position: absolute;
   width: 0;
@@ -216,11 +259,15 @@ header div nav ul li a:before {
   -o-transition: width 0.2s ease-in-out;
   transition: width 0.2s ease-in-out;
 }
-header div nav ul li a:hover {
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item a.navigation__link-item:hover {
   color: #1c285b;
 }
-header div nav ul li a:hover:before {
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item a.navigation__link-item:hover:before {
   width: 100%;
+}
+header div nav ul.header__navigation-list-wrap li.header__navigation-list-item:hover ul.header__navigation-drop-menu {
+  opacity: 1;
+  visibility: visible;
 }
 /**
 *
@@ -400,6 +447,13 @@ div.maincontent section.maincontent__fotogallery-descr-wrap {
           justify-content: space-between;
   text-align: center;
 }
+div.maincontent section.maincontent__fotogallery-descr-wrap div {
+  /*
+*
+**  Image hover  
+*
+*/
+}
 div.maincontent section.maincontent__fotogallery-descr-wrap div hr {
   height: 4px;
   border: 1px solid #e2ddd8;
@@ -414,11 +468,168 @@ div.maincontent section.maincontent__fotogallery-descr-wrap div h1.maincontent__
   color: #5a5a5a;
   text-transform: uppercase;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div img {
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first {
+  opacity: 0;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first {
+  margin: 0;
+  width: 320px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -500px;
+  left: 175px;
+  color: #fff;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third h1.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third h1.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third h1.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second h1.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second h1.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second h1.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first h1.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first h1.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first h1.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third h1.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third h1.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third h1.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second h1.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second h1.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second h1.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first h1.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first h1.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first h1.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third h1.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third h1.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third h1.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second h1.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second h1.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second h1.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first h1.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first h1.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first h1.title-first {
+  margin: 0;
+  font-size: 90px;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first p.descr-first {
+  margin: 0;
+  padding: 12px 0 0 10px;
+  font-size: 13px;
+  font-family: 'futuraLight';
+  text-align: start;
+  line-height: 20px;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second {
+  left: 560px;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third {
+  left: 950px;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third button.btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second button.btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first button.btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third button.btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second button.btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first button.btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third button.btn-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second button.btn-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first button.btn-first {
+  position: absolute;
+  cursor: pointer;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'futuraRegular';
+  font-size: 14px;
+  text-transform: uppercase;
+  bottom: -574px;
+  left: 280px;
+  background: transparent;
+  padding: 7px 10px;
+  outline: none;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third button.btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second button.btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first button.btn-second {
+  left: 650px;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third button.btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second button.btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first button.btn-third {
+  left: 1050px;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third:hover img,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second:hover img,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first:hover img {
+  opacity: 0.3;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap {
+  margin-top: 16px;
+  display: block;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap img {
   margin-top: 15px;
+  margin: 0;
+  vertical-align: bottom;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap:hover {
+  background: rgba(28, 40, 91, 0.6);
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap:hover img {
+  opacity: 0.3;
+}
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap:hover span.novisible-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap:hover span.novisible-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap:hover span.novisible-first {
+  opacity: 1;
 }
 div.maincontent section.maincontent__social-networ {
-  margin-top: 68px;
+  margin-top: 71px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -437,16 +648,52 @@ div.maincontent section.maincontent__social-networ hr.social-line-f {
   width: 635px;
 }
 div.maincontent section.maincontent__social-networ img.maincontent__social-img-f {
+  background-image: url('../img/f.svg');
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
   margin: 2px 0 0 21px;
 }
+div.maincontent section.maincontent__social-networ img.maincontent__social-img-f:hover {
+  cursor: pointer;
+  background-image: url('../img/f-bl.svg');
+  background-repeat: no-repeat;
+}
 div.maincontent section.maincontent__social-networ img.maincontent__social-img-p {
-  margin: 4px 0 0 16px;
+  background-image: url('../img/p.svg');
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin: 3px 0 0 6px;
+}
+div.maincontent section.maincontent__social-networ img.maincontent__social-img-p:hover {
+  cursor: pointer;
+  background-image: url('../img/p-bl.svg');
+  background-repeat: no-repeat;
 }
 div.maincontent section.maincontent__social-networ img.maincontent__social-img-tw {
-  margin: 1px 0 0 12px;
+  background-image: url('../img/tw.svg');
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin: 3px 0 0 11px;
+}
+div.maincontent section.maincontent__social-networ img.maincontent__social-img-tw:hover {
+  cursor: pointer;
+  background-image: url('../img/tw-bl.svg');
+  background-repeat: no-repeat;
 }
 div.maincontent section.maincontent__social-networ img.maincontent__social-img {
-  margin-left: 11px;
+  background-image: url('../img/in.svg');
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 0 11px;
+}
+div.maincontent section.maincontent__social-networ img.maincontent__social-img:hover {
+  cursor: pointer;
+  background-image: url('../img/in-bl.svg');
+  background-repeat: no-repeat;
 }
 div.maincontent section.maincontent__social-networ hr.social-line-s {
   margin: 11px 0 0 20px;
@@ -566,7 +813,7 @@ div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap f
   color: #1c285b;
 }
 div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap {
-  margin: 48px 0 0 0;
+  margin: 49px 0 0 0;
 }
 div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap h1 {
   margin: 0;
@@ -614,6 +861,9 @@ div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-w
 div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-home li a.current-item-link {
   color: #c4ab2f;
 }
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-home li a:hover {
+  color: #c4ab2f;
+}
 div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-products-serv {
   margin: 0;
   list-style: none;
@@ -641,9 +891,12 @@ div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-w
 div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-products-serv li a.current-item-link {
   color: #c4ab2f;
 }
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-products-serv li a:hover {
+  color: #c4ab2f;
+}
 div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap h1 {
   margin: 0;
-  padding-top: 1px;
+  padding-top: 2px;
   font-family: 'futuraCyrRegular';
   font-size: 17px;
   line-height: 20px;
