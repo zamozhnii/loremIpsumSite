@@ -1,0 +1,36 @@
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+  div.maincontent section div.maincontent__parallax div div.container {
+    width: 970px;
+  }
+  div.maincontent section div.container div.maincontent__slider {
+    top: -80px;
+    width: 500px;
+  }
+  div.maincontent section div.container div.maincontent__slider img {
+    width: 100%;
+  }
+  div.maincontent section div.container div.maincontent__slider div.triangle-right {
+    top: 170px;
+  }
+  div.maincontent section div.container div.maincontent__slider div.triangle-left {
+    top: 170px;
+  }
+  div.maincontent div.container div.maincontent__descr-invitations-wrap {
+    width: 450px;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap {
+    display: block;
+    width: 320px;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .container {
+    width: 750px;
+  }
+}

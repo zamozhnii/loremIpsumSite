@@ -313,25 +313,30 @@ div.maincontent section div.maincontent__parallax div {
   height: 68px;
   bottom: 0;
 }
+div.maincontent section div.maincontent__parallax div div.container {
+  width: 1155px;
+  position: relative;
+}
 div.maincontent section div.maincontent__parallax div div.container h2 {
   content: '';
-  position: absolute;
   font-family: 'futuraLight';
   font-size: 34px;
   text-transform: uppercase;
-  left: 147px;
-  bottom: -11px;
   color: #fff;
   letter-spacing: 0.3px;
+  padding: 16px 0 0 12px;
 }
-div.maincontent section div.maincontent__slider {
+div.maincontent section div.container {
+  position: relative;
+}
+div.maincontent section div.container div.maincontent__slider {
   border: 9px solid #fff;
   content: '';
   position: absolute;
-  right: 127px;
-  top: 389px;
+  right: -9px;
+  top: -183px;
 }
-div.maincontent section div.maincontent__slider div.triangle-right {
+div.maincontent section div.container div.maincontent__slider div.triangle-right {
   content: '';
   position: absolute;
   width: 0;
@@ -343,7 +348,7 @@ div.maincontent section div.maincontent__slider div.triangle-right {
   top: 233px;
   cursor: pointer;
 }
-div.maincontent section div.maincontent__slider div.triangle-right span {
+div.maincontent section div.container div.maincontent__slider div.triangle-right span {
   position: relative;
   border: 1px solid #5c5c5c;
   border-left: none;
@@ -357,7 +362,7 @@ div.maincontent section div.maincontent__slider div.triangle-right span {
   top: -11px;
   right: -17px;
 }
-div.maincontent section div.maincontent__slider div.triangle-left {
+div.maincontent section div.container div.maincontent__slider div.triangle-left {
   content: '';
   position: absolute;
   width: 0;
@@ -369,7 +374,7 @@ div.maincontent section div.maincontent__slider div.triangle-left {
   left: 0;
   cursor: pointer;
 }
-div.maincontent section div.maincontent__slider div.triangle-left span {
+div.maincontent section div.container div.maincontent__slider div.triangle-left span {
   position: relative;
   border: 1px solid #5c5c5c;
   border-right: none;
@@ -383,7 +388,7 @@ div.maincontent section div.maincontent__slider div.triangle-left span {
   top: -11px;
   left: -40px;
 }
-div.maincontent section div.maincontent__slider ul {
+div.maincontent section div.container div.maincontent__slider ul {
   margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -395,7 +400,7 @@ div.maincontent section div.maincontent__slider ul {
           justify-content: flex-end;
   list-style: none;
 }
-div.maincontent section div.maincontent__slider ul li {
+div.maincontent section div.container div.maincontent__slider ul li {
   margin: 13px 0 0 8px;
   width: 11px;
   height: 11px;
@@ -403,7 +408,7 @@ div.maincontent section div.maincontent__slider ul li {
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
-div.maincontent section div.maincontent__slider ul li.current-circle {
+div.maincontent section div.container div.maincontent__slider ul li.current-circle {
   background: #1c285b;
 }
 div.maincontent div.container div.maincontent__descr-invitations-wrap {
@@ -628,7 +633,7 @@ div.maincontent section.maincontent__social-networ hr.social-line-f {
   border: 1px solid #e2ddd8;
   border-right: none;
   border-left: none;
-  width: 635px;
+  width: 44.5%;
 }
 div.maincontent section.maincontent__social-networ div.maincontent__social-img-f {
   background-image: url('../img/f.svg');
@@ -684,7 +689,7 @@ div.maincontent section.maincontent__social-networ hr.social-line-s {
   border: 1px solid #e2ddd8;
   border-right: none;
   border-left: none;
-  width: 627px;
+  width: 44%;
 }
 /**
 *

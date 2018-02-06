@@ -272,16 +272,16 @@ div.maincontent {
                 height: 68px;
                 bottom: 0;
                 div.container {
+                    width: @containerWidth;
+                    position: relative;
                     h2 {
                         content: '';
-                        position: absolute;
                         font-family: @futuraLight;
                         font-size: 34px;
                         text-transform: uppercase;
-                        left: 147px;
-                        bottom: -11px;
                         color: #fff;
                         letter-spacing: 0.3px;
+                        padding: 16px 0 0 12px;
                     }
                 }
             }
@@ -292,13 +292,14 @@ div.maincontent {
 * Slider
 *
 **/
-
+div.container {
+    position: relative;
         div.maincontent__slider {
             border: 9px solid #fff;
             content: '';
             position: absolute;
-            right: 127px;
-            top: 389px;
+            right: -9px;
+            top: -183px;
             div.triangle-right {
                 content: '';
                 position: absolute;
@@ -365,6 +366,7 @@ div.maincontent {
             }
         }
     }
+}
     div.container {
         div.maincontent__descr-invitations-wrap {
             width: 499px;
@@ -527,7 +529,7 @@ div.maincontent {
                 border: 1px solid #e2ddd8;
                 border-right: none;
                 border-left: none;
-                width: 635px;
+                width: 44.5%;
                 }
                 
 
@@ -585,7 +587,7 @@ div.maincontent {
                     border: 1px solid #e2ddd8;
                     border-right: none;
                     border-left: none;
-                    width: 627px;
+                    width: 44%;
                 }
     }
 }
