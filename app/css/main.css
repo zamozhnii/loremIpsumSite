@@ -436,7 +436,8 @@ div.maincontent__address-company-newslet-wrap {
       -ms-flex-align: center;
           align-items: center;
 }
-div.maincontent__address-company-newslet-wrap section {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap {
+  width: 288px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -446,9 +447,9 @@ div.maincontent__address-company-newslet-wrap section {
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  margin: 47px 0 0 10px;
+  margin: 21px 0 0 10px;
 }
-div.maincontent__address-company-newslet-wrap section h1 {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap h1 {
   margin: 0;
   padding-left: 2px;
   font-family: 'futuraLight';
@@ -457,21 +458,21 @@ div.maincontent__address-company-newslet-wrap section h1 {
   letter-spacing: 0.5px;
   color: #5a5a5a;
 }
-div.maincontent__address-company-newslet-wrap section p.maincontent__address-adr {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap p.maincontent__address-adr {
   margin: 0;
   padding: 10px 0 0 1px;
   font-family: 'futuraCyrRegular';
   font-size: 13px;
   color: #959595;
 }
-div.maincontent__address-company-newslet-wrap section p.maincontent__address-num {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap p.maincontent__address-num {
   margin: 0;
   padding: 6px 0 0 1px;
   font-family: 'futuraCyrRegular';
   font-size: 13px;
   color: #959595;
 }
-div.maincontent__address-company-newslet-wrap section figure {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap figure {
   margin: 10px 0 0 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -482,14 +483,14 @@ div.maincontent__address-company-newslet-wrap section figure {
       -ms-flex-align: center;
           align-items: center;
 }
-div.maincontent__address-company-newslet-wrap section figure span {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap figure span {
   display: block;
   margin: 4px 0 0 4px;
 }
-div.maincontent__address-company-newslet-wrap section figure span img {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap figure span img {
   width: 100%;
 }
-div.maincontent__address-company-newslet-wrap section figure figcaption p.descr-number {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap figure figcaption p.descr-number {
   margin: 0;
   padding: 2px 0 0 12px;
   font-family: 'futuraCyrRegular';
@@ -497,22 +498,22 @@ div.maincontent__address-company-newslet-wrap section figure figcaption p.descr-
   color: #959595;
   letter-spacing: 0.6px;
 }
-div.maincontent__address-company-newslet-wrap section figure figcaption p.descr-number label {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap figure figcaption p.descr-number label {
   padding-left: 2px;
   letter-spacing: 0;
 }
-div.maincontent__address-company-newslet-wrap section figure.maincontent__email-wrap {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap figure.maincontent__email-wrap {
   margin: 0;
 }
-div.maincontent__address-company-newslet-wrap section figure.maincontent__email-wrap span.maincontent__img-email-wrap {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap figure.maincontent__email-wrap span.maincontent__img-email-wrap {
   margin: 0;
   padding-top: 4px;
   display: block;
 }
-div.maincontent__address-company-newslet-wrap section figure.maincontent__email-wrap span.maincontent__img-email-wrap img {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap figure.maincontent__email-wrap span.maincontent__img-email-wrap img {
   width: 100%;
 }
-div.maincontent__address-company-newslet-wrap section figure.maincontent__email-wrap figcaption p.descr-email {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap figure.maincontent__email-wrap figcaption p.descr-email {
   margin: 0;
   padding: 2px 0 0 8px;
   font-family: 'futuraCyrRegular';
@@ -520,8 +521,148 @@ div.maincontent__address-company-newslet-wrap section figure.maincontent__email-
   color: #959595;
   letter-spacing: 0.6px;
 }
-div.maincontent__address-company-newslet-wrap section figure.maincontent__email-wrap figcaption p.descr-email label {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap figure.maincontent__email-wrap figcaption p.descr-email label {
   padding-left: 9px;
   letter-spacing: 0.1px;
   color: #1c285b;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap {
+  margin: 48px 0 0 0;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap h1 {
+  margin: 0;
+  padding-left: 12px;
+  font-family: 'futuraCyrRegular';
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  color: #5a5a5a;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-home {
+  margin: 0;
+  list-style: none;
+  padding-left: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-home li {
+  padding-top: 10px;
+  font-family: 'futuraCyrRegular';
+  font-size: 13px;
+  line-height: 15px;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-home li a {
+  text-decoration: none;
+  color: #959595;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-home li a.current-item-link {
+  color: #c4ab2f;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-products-serv {
+  margin: 0;
+  list-style: none;
+  padding-left: 33px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-products-serv li {
+  padding-top: 10px;
+  font-family: 'futuraCyrRegular';
+  font-size: 13px;
+  line-height: 15px;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-products-serv li a {
+  text-decoration: none;
+  color: #959595;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-products-serv li a.current-item-link {
+  color: #c4ab2f;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap h1 {
+  margin: 0;
+  padding-top: 1px;
+  font-family: 'futuraCyrRegular';
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  color: #5a5a5a;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap p {
+  margin: 0;
+  padding: 11px 0 0 0;
+  font-family: 'futuraCyrRegular';
+  font-size: 13px;
+  color: #959595;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap span.maincontent__newsletter-search-btn {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e2ddd8;
+  font-family: 'futuraCyrRegular';
+  font-size: 13px;
+  line-height: 16px;
+  color: #959595;
+  width: 288px;
+  height: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap span.maincontent__newsletter-search-btn input {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 33px;
+  padding: 14px 0 7px 13px;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap span.maincontent__newsletter-search-btn button {
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  position: relative;
+  background: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap span.maincontent__newsletter-search-btn button:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #707070;
+  width: 9px;
+  height: 9px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-left: 0;
+  border-bottom: 0;
+  top: 16px;
+  right: 16px;
 }
