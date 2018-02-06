@@ -318,7 +318,7 @@ div.maincontent {
         } 
     }
     section.maincontent__fotogallery-descr-wrap {
-        margin-top: 86px;
+        margin: 86px 0 0 10px;
         display: flex;
         justify-content: space-between;
         text-align: center;
@@ -331,7 +331,7 @@ div.maincontent {
                 width: 100%;
             }
             h1.maincontent__fotogal-title {
-                margin: 20px 0 0 0;
+                margin: 20px 0 0 5px;
                 font-family: @futuraLight;
                 font-size: 18px;
                 color: #5a5a5a;
@@ -343,30 +343,122 @@ div.maincontent {
         }
     }
     section.maincontent__social-networ {
-        margin-top: 70px;
+        margin-top: 68px;
         display: flex;
         justify-content: space-between; 
             hr.social-line-f {
-                margin: 10px 22px 0 0;
+                margin: 11px 0 0 0;
                 height: 4px;
                 border: 1px solid #e2ddd8;
                 border-right: none;
                 border-left: none;
-                width: 535px;
+                width: 635px;
                 }
-                img {
-                    margin-right: 18px;
+
+                img.maincontent__social-img-f {
+                    margin: 2px 0 0 21px;
+                }
+                img.maincontent__social-img-p {
+                    margin: 4px 0 0 16px;
+                }
+                img.maincontent__social-img-tw {
+                    margin: 1px 0 0 12px;
+                }
+                img.maincontent__social-img {
+                    margin-left: 11px;
                 }
                 hr.social-line-s {
-                    margin: 10px 0 0 20px;
+                    margin: 11px 0 0 20px;
                     height: 4px;
                     border: 1px solid #e2ddd8;
                     border-right: none;
                     border-left: none;
-                    width: 535px;
+                    width: 627px;
                 }
-       
     }
-        
-        
+}
+div.maincontent__address-company-newslet-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 47px 0 0 10px;
+        h1 {
+            margin: 0;
+            padding-left: 2px;
+            font-family: @futuraLight;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #5a5a5a;
+        }
+        p.maincontent__address-adr {
+            margin: 0;
+            padding: 10px 0 0 1px;
+            font-family: @futuraCyrRegular;
+            font-size: 13px;
+            color: #959595;
+        }
+        p.maincontent__address-num {
+            margin: 0;
+            padding: 6px 0 0 1px;
+            font-family: @futuraCyrRegular;
+            font-size: 13px;
+            color: #959595;
+        }
+        figure {
+            margin: 10px 0 0 0;
+            display: flex;
+            align-items: center;
+            span {
+                display: block;
+                margin: 4px 0 0 4px;
+                img {
+                    width: 100%;
+                }
+            }
+            figcaption {
+                p.descr-number {
+                    margin: 0;
+                    padding: 2px 0 0 12px;
+                    font-family: @futuraCyrRegular;
+                    font-size: 13px;
+                    color: #959595;
+                    letter-spacing: 0.6px;
+                    label {
+                        padding-left: 2px;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+        figure.maincontent__email-wrap {
+            margin: 0;
+            span.maincontent__img-email-wrap {
+                margin: 0;
+                padding-top: 4px;
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+            figcaption {
+                p.descr-email {
+                    margin: 0;
+                    padding: 2px 0 0 8px;
+                    font-family: @futuraCyrRegular;
+                    font-size: 13px;
+                    color: #959595;
+                    letter-spacing: 0.6px;
+                    label {
+                        padding-left: 9px;
+                        letter-spacing: 0.1px;
+                        color: @descrLinColor;
+                    }
+                }
+            }
+        }
     }
+}
