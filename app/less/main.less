@@ -185,14 +185,14 @@ header {
 div.maincontent {
     section {
         div.maincontent__parallax {
-            min-height: 750px;
+            min-height: 350px;
             background: transparent;
             position: relative;
             align-items: center;
-            top: -450px;
-            width: 135%;
+            top: -50px;
+            width: 100%;
+            //left: -240px;
             z-index: -1;
-            left: -240px;
             div {
                 content: '';
                 position: absolute;
@@ -207,7 +207,7 @@ div.maincontent {
                         font-family: @futuraLight;
                         font-size: 34px;
                         text-transform: uppercase;
-                        left: 387px;
+                        left: 147px;
                         bottom: -10px;
                         color: #fff;
                         letter-spacing: 0.3px;
@@ -215,9 +215,107 @@ div.maincontent {
                 }
             }
         }
+        div.maincontent__slider {
+            border: 9px solid #fff;
+            content: '';
+            position: absolute;
+            right: 127px;
+            top: 389px;
+            div.triangle-right {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 41px solid transparent;
+                border-right: 41px solid #fff;
+                border-bottom: 41px solid transparent;
+                right: 0;
+                top: 233px;
+                cursor: pointer;
+                span {
+                    position: relative;
+                    border: 1px solid #5c5c5c;
+                    border-left: none;
+                    border-top: none;
+                    display: block;
+                    width: 22px;
+                    height: 22px;
+                    transform: rotate(-45deg);
+                    top: -11px;
+                    right: -17px;
+                }
+            }
+            div.triangle-left {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 41px solid transparent;
+                border-left: 41px solid #fff;
+                border-bottom: 41px solid transparent;
+                top: 233px;
+                left: 0;
+                cursor: pointer;
+                span {
+                    position: relative;
+                    border: 1px solid #5c5c5c;
+                    border-right: none;
+                    border-bottom: none;
+                    display: block;
+                    width: 22px;
+                    height: 22px;
+                    transform: rotate(-45deg);
+                    top: -11px;
+                    left: -40px;
+                }
+            }
+            ul {
+                margin: 0;
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                li {
+                    margin: 13px 0 0 8px;
+                    width: 11px;
+                    height: 11px;
+                    background: #e2ddd8;
+                    border-radius: 50%;
+                }
+                li.current-circle {
+                    background: @descrLinColor;
+                }
+            }
+        }
     }
-    .style {
-        background: red;
-        height: 500px;
+    div.container {
+        article {
+            width: 499px;
+            content: '';
+            margin: 13px 0 0 11px;
+            p {
+                font-family: @futuraCyrRegular;
+                font-size: 13px;
+                line-height: 20px;
+                word-spacing: 0.8px;
+                color: #838383;
+            }
+            p:nth-child(2) {
+                padding-top: 7px;
+            }
+            p:nth-child(3) {
+                padding-top: 7px;
+                word-spacing: 0.5px;
+            }
+            p:nth-child(4) {
+                padding-top: 7px;
+                word-spacing: 0.2px;
+            }
+            p:nth-child(5) {
+                padding-top: 7px;
+                font-family: @futuraCyrBold;
+                color: @backgroundParallax;
+                word-spacing: 0;
+            }
+        } 
     }
 }
