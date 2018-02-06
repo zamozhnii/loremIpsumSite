@@ -313,7 +313,7 @@ div.maincontent section div.maincontent__parallax div {
   height: 68px;
   bottom: 0;
 }
-div.maincontent section div.maincontent__parallax div div.container h1 {
+div.maincontent section div.maincontent__parallax div div.container h2 {
   content: '';
   position: absolute;
   font-family: 'futuraLight';
@@ -406,30 +406,30 @@ div.maincontent section div.maincontent__slider ul li {
 div.maincontent section div.maincontent__slider ul li.current-circle {
   background: #1c285b;
 }
-div.maincontent div.container article {
+div.maincontent div.container div.maincontent__descr-invitations-wrap {
   width: 499px;
   content: '';
   margin: 13px 0 0 11px;
 }
-div.maincontent div.container article p {
+div.maincontent div.container div.maincontent__descr-invitations-wrap p {
   font-family: 'futuraCyrRegular';
   font-size: 13px;
   line-height: 20px;
   word-spacing: 0.8px;
   color: #838383;
 }
-div.maincontent div.container article p:nth-child(2) {
+div.maincontent div.container div.maincontent__descr-invitations-wrap p:nth-child(2) {
   padding-top: 7px;
 }
-div.maincontent div.container article p:nth-child(3) {
+div.maincontent div.container div.maincontent__descr-invitations-wrap p:nth-child(3) {
   padding-top: 7px;
   word-spacing: 0.5px;
 }
-div.maincontent div.container article p:nth-child(4) {
+div.maincontent div.container div.maincontent__descr-invitations-wrap p:nth-child(4) {
   padding-top: 7px;
   word-spacing: 0.2px;
 }
-div.maincontent div.container article p:nth-child(5) {
+div.maincontent div.container div.maincontent__descr-invitations-wrap p:nth-child(5) {
   padding-top: 7px;
   font-family: 'futuraCyrBold';
   color: #1d275a;
@@ -461,27 +461,27 @@ div.maincontent section.maincontent__fotogallery-descr-wrap div hr {
   border-left: none;
   width: 100%;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div h1.maincontent__fotogal-title {
+div.maincontent section.maincontent__fotogallery-descr-wrap div h2.maincontent__fotogal-title {
   margin: 20px 0 0 5px;
   font-family: 'futuraLight';
   font-size: 18px;
   color: #5a5a5a;
   text-transform: uppercase;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first {
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first {
   opacity: 0;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first {
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first {
   margin: 0;
   width: 320px;
   display: -webkit-box;
@@ -493,93 +493,84 @@ div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-f
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  bottom: -500px;
-  left: 175px;
+  top: 4px;
+  left: 0;
   color: #fff;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third h1.title-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third h1.title-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third h1.title-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second h1.title-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second h1.title-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second h1.title-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first h1.title-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first h1.title-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first h1.title-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third h1.title-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third h1.title-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third h1.title-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second h1.title-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second h1.title-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second h1.title-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first h1.title-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first h1.title-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first h1.title-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third h1.title-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third h1.title-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third h1.title-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second h1.title-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second h1.title-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second h1.title-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first h1.title-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first h1.title-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first h1.title-first {
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third p.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third p.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third p.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second p.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second p.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second p.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first p.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first p.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first p.title-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third p.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third p.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third p.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second p.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second p.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second p.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first p.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first p.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first p.title-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third p.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third p.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third p.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second p.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second p.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second p.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first p.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first p.title-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first p.title-first {
   margin: 0;
   font-size: 90px;
+  padding: 35px 0 0 26px;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third p.descr-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third p.descr-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third p.descr-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second p.descr-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second p.descr-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second p.descr-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first p.descr-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first p.descr-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first p.descr-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third p.descr-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third p.descr-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third p.descr-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second p.descr-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second p.descr-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second p.descr-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first p.descr-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first p.descr-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first p.descr-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third p.descr-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third p.descr-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third p.descr-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second p.descr-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second p.descr-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second p.descr-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-first p.descr-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-first p.descr-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-first p.descr-first {
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first p.descr-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first p.descr-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first p.descr-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first p.descr-first {
   margin: 0;
-  padding: 12px 0 0 10px;
+  padding: 42px 0 0 10px;
   font-size: 13px;
   font-family: 'futuraLight';
   text-align: start;
   line-height: 20px;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-second {
-  left: 560px;
-}
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third div.hidden-descr-btn-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second div.hidden-descr-btn-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first div.hidden-descr-btn-third {
-  left: 950px;
-}
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third button.btn-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second button.btn-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first button.btn-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third button.btn-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second button.btn-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first button.btn-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third button.btn-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second button.btn-first,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first button.btn-first {
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third button.btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second button.btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first button.btn-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third button.btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second button.btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first button.btn-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third button.btn-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second button.btn-first,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first button.btn-first {
   position: absolute;
   cursor: pointer;
   border: 2px solid #fff;
@@ -587,45 +578,37 @@ div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-f
   font-family: 'futuraRegular';
   font-size: 14px;
   text-transform: uppercase;
-  bottom: -574px;
-  left: 280px;
   background: transparent;
   padding: 7px 10px;
   outline: none;
+  bottom: 0;
+  right: 10px;
+  margin: 0 122px 40px 0;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third button.btn-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second button.btn-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first button.btn-second {
-  left: 650px;
-}
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third button.btn-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second button.btn-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first button.btn-third {
-  left: 1050px;
-}
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-third:hover img,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-second:hover img,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.novisible-first:hover img {
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third:hover img,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second:hover img,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first:hover img {
   opacity: 0.3;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap {
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap {
   margin-top: 16px;
   display: block;
+  position: relative;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap img {
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap img {
   margin-top: 15px;
   margin: 0;
   vertical-align: bottom;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap:hover {
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap:hover {
   background: rgba(28, 40, 91, 0.6);
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap:hover img {
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap:hover img {
   opacity: 0.3;
 }
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap:hover span.novisible-third,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap:hover span.novisible-second,
-div.maincontent section.maincontent__fotogallery-descr-wrap div span.image-wrap:hover span.novisible-first {
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap:hover div.novisible-third,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap:hover div.novisible-second,
+div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap:hover div.novisible-first {
   opacity: 1;
 }
 div.maincontent section.maincontent__social-networ {
@@ -647,50 +630,50 @@ div.maincontent section.maincontent__social-networ hr.social-line-f {
   border-left: none;
   width: 635px;
 }
-div.maincontent section.maincontent__social-networ img.maincontent__social-img-f {
+div.maincontent section.maincontent__social-networ div.maincontent__social-img-f {
   background-image: url('../img/f.svg');
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   margin: 2px 0 0 21px;
 }
-div.maincontent section.maincontent__social-networ img.maincontent__social-img-f:hover {
+div.maincontent section.maincontent__social-networ div.maincontent__social-img-f:hover {
   cursor: pointer;
   background-image: url('../img/f-bl.svg');
   background-repeat: no-repeat;
 }
-div.maincontent section.maincontent__social-networ img.maincontent__social-img-p {
+div.maincontent section.maincontent__social-networ div.maincontent__social-img-p {
   background-image: url('../img/p.svg');
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   margin: 3px 0 0 6px;
 }
-div.maincontent section.maincontent__social-networ img.maincontent__social-img-p:hover {
+div.maincontent section.maincontent__social-networ div.maincontent__social-img-p:hover {
   cursor: pointer;
   background-image: url('../img/p-bl.svg');
   background-repeat: no-repeat;
 }
-div.maincontent section.maincontent__social-networ img.maincontent__social-img-tw {
+div.maincontent section.maincontent__social-networ div.maincontent__social-img-tw {
   background-image: url('../img/tw.svg');
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   margin: 3px 0 0 11px;
 }
-div.maincontent section.maincontent__social-networ img.maincontent__social-img-tw:hover {
+div.maincontent section.maincontent__social-networ div.maincontent__social-img-tw:hover {
   cursor: pointer;
   background-image: url('../img/tw-bl.svg');
   background-repeat: no-repeat;
 }
-div.maincontent section.maincontent__social-networ img.maincontent__social-img {
+div.maincontent section.maincontent__social-networ div.maincontent__social-img {
   background-image: url('../img/in.svg');
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   margin: 1px 0 0 11px;
 }
-div.maincontent section.maincontent__social-networ img.maincontent__social-img:hover {
+div.maincontent section.maincontent__social-networ div.maincontent__social-img:hover {
   cursor: pointer;
   background-image: url('../img/in-bl.svg');
   background-repeat: no-repeat;
@@ -735,7 +718,7 @@ div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap {
           flex-flow: column nowrap;
   margin: 21px 0 0 10px;
 }
-div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap h1 {
+div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap h3 {
   margin: 0;
   padding-left: 2px;
   font-family: 'futuraLight';
@@ -815,7 +798,7 @@ div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap f
 div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap {
   margin: 49px 0 0 0;
 }
-div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap h1 {
+div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap h2 {
   margin: 0;
   padding-left: 12px;
   font-family: 'futuraCyrRegular';
@@ -894,7 +877,7 @@ div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-w
 div.maincontent__address-company-newslet-wrap section.maincontent__lists-links-wrap div ul.maincontent__list-link-products-serv li a:hover {
   color: #c4ab2f;
 }
-div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap h1 {
+div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap h2 {
   margin: 0;
   padding-top: 2px;
   font-family: 'futuraCyrRegular';
