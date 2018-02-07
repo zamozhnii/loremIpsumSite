@@ -27,6 +27,12 @@
 @containerWidth: 1155px;
 @descrLinColor: #1c285b;
 @backgroundParallax: #1d275a;
+@linkItem: #5a5a5a;
+@borderColor: #5c5c5c;
+@liCircleCol: #e2ddd8;
+@textPColor: #959595;
+@linkHover: #c4ab2f;
+@whiteColor: #fff;
 
 * {
     box-sizing: border-box;
@@ -73,7 +79,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 header {
-    background: #fff;
+    background: @whiteColor;
     div {
         div {
             display: flex;
@@ -130,7 +136,7 @@ header {
                     font-size: 14px;
                     line-height: 25px;
                     text-transform: uppercase;
-                    color: #fff;
+                    color: @whiteColor;
                     background: @backgroundParallax;
                     padding: 3px 13px 0 17px;
                     cursor: pointer;
@@ -139,7 +145,7 @@ header {
         }      
     }
     hr {
-        border: 1px solid #e2ddd8;
+        border: 1px solid @liCircleCol;
         border-right: none;
         border-left: none;
         width: 100%;
@@ -192,7 +198,7 @@ header {
                                 font-size: 13px;
                                 letter-spacing: 0.5px;
                                 line-height: 15px;
-                                color: #fff;
+                                color: @whiteColor;
                             }
                             a:hover {
                                 color: #c4ab2e;
@@ -215,7 +221,7 @@ header {
                         text-transform: uppercase;
                         font-family: @futuraLight;
                         font-size: 14px;
-                        color: #5a5a5a;
+                        color: @linkItem;
                         text-decoration: none;
                         position: relative;
                     }
@@ -279,7 +285,7 @@ div.maincontent {
                         font-family: @futuraLight;
                         font-size: 34px;
                         text-transform: uppercase;
-                        color: #fff;
+                        color: @whiteColor;
                         letter-spacing: 0.3px;
                         padding: 16px 0 0 12px;
                     }
@@ -295,7 +301,7 @@ div.maincontent {
 div.container {
     position: relative;
         div.maincontent__slider {
-            border: 9px solid #fff;
+            border: 9px solid @whiteColor;
             content: '';
             position: absolute;
             right: -8px;
@@ -308,14 +314,14 @@ div.container {
                 width: 0;
                 height: 0;
                 border-top: 41px solid transparent;
-                border-right: 41px solid #fff;
+                border-right: 41px solid @whiteColor;
                 border-bottom: 41px solid transparent;
                 right: 0;
                 top: 233px;
                 cursor: pointer;
                 span {
                     position: relative;
-                    border: 1px solid #5c5c5c;
+                    border: 1px solid @borderColor;
                     border-left: none;
                     border-top: none;
                     display: block;
@@ -332,14 +338,14 @@ div.container {
                 width: 0;
                 height: 0;
                 border-top: 41px solid transparent;
-                border-left: 41px solid #fff;
+                border-left: 41px solid @whiteColor;
                 border-bottom: 41px solid transparent;
                 top: 233px;
                 left: 0;
                 cursor: pointer;
                 span {
                     position: relative;
-                    border: 1px solid #5c5c5c;
+                    border: 1px solid @borderColor;
                     border-right: none;
                     border-bottom: none;
                     display: block;
@@ -359,7 +365,7 @@ div.container {
                     margin: 17px 0 0 8px;
                     width: 11px;
                     height: 11px;
-                    background: #e2ddd8;
+                    background: @liCircleCol;
                     border-radius: 50%;
                     cursor: pointer;
                 }
@@ -416,7 +422,7 @@ div.container {
         div {
             hr {
                 height: 4px;
-                border: 1px solid #e2ddd8;
+                border: 1px solid @liCircleCol;
                 border-right: none;
                 border-left: none;
                 width: 100%;
@@ -425,7 +431,7 @@ div.container {
                 margin: 20px 0 0 5px;
                 font-family: @futuraLight;
                 font-size: 18px;
-                color: #5a5a5a;
+                color: @linkItem;
                 text-transform: uppercase;
             }
 /*
@@ -447,7 +453,7 @@ div.container {
                     position: absolute;
                     top: 4px;
                     left: 0;
-                    color: #fff;
+                    color: @whiteColor;
                     p.title-third,
                     p.title-second,
                     p.title-first {
@@ -472,8 +478,8 @@ div.container {
                 button.btn-first {
                     position: absolute;
                     cursor: pointer;
-                    border: 2px solid #fff;
-                    color: #fff;
+                    border: 2px solid @whiteColor;
+                    color: @whiteColor;
                     font-family: @futuraRegular;
                     font-size: 14px;
                     text-transform: uppercase;
@@ -529,7 +535,7 @@ div.container {
             hr.social-line-f {
                 margin: 11px 0 0 0;
                 height: 4px;
-                border: 1px solid #e2ddd8;
+                border: 1px solid @liCircleCol;
                 border-right: none;
                 border-left: none;
                 width: 44.5%;
@@ -587,7 +593,7 @@ div.container {
                 hr.social-line-s {
                     margin: 11px 0 0 20px;
                     height: 4px;
-                    border: 1px solid #e2ddd8;
+                    border: 1px solid @liCircleCol;
                     border-right: none;
                     border-left: none;
                     width: 44%;
@@ -617,21 +623,21 @@ div.maincontent__address-company-newslet-wrap {
             font-size: 18px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            color: #5a5a5a;
+            color: @linkItem;
         }
         p.maincontent__address-adr {
             margin: 0;
             padding: 10px 0 0 1px;
             font-family: @futuraCyrRegular;
             font-size: 13px;
-            color: #959595;
+            color: @textPColor;
         }
         p.maincontent__address-num {
             margin: 0;
             padding: 6px 0 0 1px;
             font-family: @futuraCyrRegular;
             font-size: 13px;
-            color: #959595;
+            color: @textPColor;
         }
         figure {
             margin: 10px 0 0 0;
@@ -650,7 +656,7 @@ div.maincontent__address-company-newslet-wrap {
                     padding: 2px 0 0 12px;
                     font-family: @futuraCyrRegular;
                     font-size: 13px;
-                    color: #959595;
+                    color: @textPColor;
                     letter-spacing: 0.6px;
                     label {
                         padding-left: 2px;
@@ -675,7 +681,7 @@ div.maincontent__address-company-newslet-wrap {
                     padding: 2px 0 0 8px;
                     font-family: @futuraCyrRegular;
                     font-size: 13px;
-                    color: #959595;
+                    color: @textPColor;
                     letter-spacing: 0.6px;
                     label {
                         padding-left: 9px;
@@ -695,7 +701,7 @@ div.maincontent__address-company-newslet-wrap {
             font-size: 17px;
             text-transform: uppercase;
             letter-spacing: 0.1px;
-            color: #5a5a5a;
+            color: @linkItem;
         }
         div {
             display: flex;
@@ -713,13 +719,13 @@ div.maincontent__address-company-newslet-wrap {
                     line-height: 15px;
                     a {
                         text-decoration: none;
-                        color: #959595;
+                        color: @textPColor;
                     }
                     a.current-item-link {
-                        color: #c4ab2f;
+                        color: @linkHover;
                     }
                     a:hover {
-                        color: #c4ab2f;
+                        color: @linkHover;
                     }
                 }
             }
@@ -737,13 +743,13 @@ div.maincontent__address-company-newslet-wrap {
                     line-height: 15px;
                     a {
                         text-decoration: none;
-                        color: #959595;
+                        color: @textPColor;
                     }
                     a.current-item-link {
-                        color: #c4ab2f;
+                        color: @linkHover;
                     }
                     a:hover {
-                        color: #c4ab2f;
+                        color: @linkHover;
                     }
                 }
             }
@@ -758,23 +764,23 @@ div.maincontent__address-company-newslet-wrap {
             line-height: 20px;
             text-transform: uppercase;
             letter-spacing: 0.1px;
-            color: #5a5a5a;
+            color: @linkItem;
         }
         p {
             margin: 0;
             padding: 11px 0 0 0;
             font-family: @futuraCyrRegular;
             font-size: 13px;
-            color: #959595;
+            color: @textPColor;
         }
         span.maincontent__newsletter-search-btn {
             margin-top: 15px;
             display: flex;
-            border: 1px solid #e2ddd8;
+            border: 1px solid @liCircleCol;
             font-family: @futuraCyrRegular;
             font-size: 13px;
             line-height: 16px;
-            color: #959595;
+            color: @textPColor;
             width: 288px;
             height: 40px;
             text-align: center;
@@ -827,7 +833,7 @@ footer {
             justify-content: space-between;
             p {
                 font-size: 11px;
-                color: #959595;
+                color: @textPColor;
                 font-family: @futuraCyrRegular;
                 padding: 23px 0 0 10px;
             }
