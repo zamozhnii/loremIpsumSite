@@ -225,7 +225,7 @@ header {
                         width: 0;
                         height: 4px;
                         background: @descrLinColor;
-                        top: -26px;
+                        top: -27px;
                         left: 50%;
                         transform: translateX(-50%);
                         transition: width .2s ease-in-out;
@@ -298,8 +298,10 @@ div.container {
             border: 9px solid #fff;
             content: '';
             position: absolute;
-            right: -9px;
+            right: -8px;
             top: -183px;
+            width: 617px;
+            height: 565px;
             div.triangle-right {
                 content: '';
                 position: absolute;
@@ -354,11 +356,12 @@ div.container {
                 justify-content: flex-end;
                 list-style: none;
                 li {
-                    margin: 13px 0 0 8px;
+                    margin: 17px 0 0 8px;
                     width: 11px;
                     height: 11px;
                     background: #e2ddd8;
                     border-radius: 50%;
+                    cursor: pointer;
                 }
                 li.current-circle {
                     background: @descrLinColor;
@@ -830,4 +833,32 @@ footer {
             }
         }
     }
+}
+
+/**
+*
+** works with JS
+*
+**/
+img.active-img {
+    display: block;
+}
+.slider-image {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and(min-width:1027px) and (max-width:1920px) {
+    div.maincontent__slider {
+        opacity: 0;
+    }
+    div.maincontent__descr-invitations-wrap {
+        position: relative;
+        left: -900px;
+    }
+    .maincontent__foto-title {
+        opacity: 0;
+    }
+
 }

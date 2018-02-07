@@ -33,4 +33,315 @@
   .container {
     width: 750px;
   }
+  header div div section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding-top: 10px;
+  }
+  header div div section p {
+    padding: 0;
+  }
+  header div div section h2 {
+    padding: 0;
+  }
+  header div div section button {
+    margin-top: 15px;
+  }
+  header div nav ul.header__navigation-list-wrap {
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    margin: 0;
+  }
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item {
+    margin: 13px 0 20px 0;
+  }
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item:nth-child(8),
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item:nth-child(9),
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item:nth-child(10),
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item:nth-child(4),
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item:nth-child(5) {
+    display: none;
+  }
+  div.maincontent section div.maincontent__parallax div div.container {
+    width: 750px;
+  }
+  div.maincontent section div.container div.maincontent__slider {
+    top: 50px;
+    width: 370px;
+  }
+  div.maincontent section div.container div.maincontent__slider img {
+    width: 100%;
+  }
+  div.maincontent section div.container div.maincontent__slider div.triangle-right {
+    top: 130px;
+  }
+  div.maincontent section div.container div.maincontent__slider div.triangle-left {
+    top: 130px;
+  }
+  div.maincontent div.container div.maincontent__descr-invitations-wrap {
+    width: 370px;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first {
+    width: 400px;
+    top: 50px;
+    left: 40px;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third p.descr-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third p.descr-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third p.descr-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second p.descr-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second p.descr-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second p.descr-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first p.descr-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first p.descr-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first p.descr-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third p.descr-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third p.descr-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third p.descr-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second p.descr-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second p.descr-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second p.descr-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first p.descr-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first p.descr-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first p.descr-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third p.descr-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third p.descr-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third p.descr-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second p.descr-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second p.descr-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second p.descr-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first p.descr-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first p.descr-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first p.descr-first {
+    font-size: 16px;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap {
+    display: block;
+    width: 500px;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap img {
+    width: 100%;
+  }
+  div.maincontent section.maincontent__social-networ hr.social-line-f {
+    width: 40%;
+  }
+  div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap {
+    margin-left: 40px;
+  }
+  div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap span.maincontent__newsletter-search-btn {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 785px) {
+  .container {
+    width: 320px;
+  }
+  header div div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header div div figure {
+    text-align: center;
+  }
+  header div div figure span {
+    width: 256px;
+  }
+  header div div section {
+    padding-top: 30px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header hr {
+    display: none;
+    margin-top: 20px;
+  }
+  header div nav ul.header__navigation-list-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 14px 0 20px 10px;
+  }
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item ul.header__navigation-drop-menu {
+    top: 382px;
+    left: 280px;
+  }
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item:nth-child(8),
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item:nth-child(9),
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item:nth-child(10),
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item:nth-child(4),
+  header div nav ul.header__navigation-list-wrap li.header__navigation-list-item:nth-child(5) {
+    display: block;
+  }
+  div.maincontent {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.maincontent section div.maincontent__parallax {
+    display: none;
+  }
+  div.maincontent section div.maincontent__parallax div {
+    display: none;
+  }
+  div.maincontent section div.container {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.maincontent section div.container div.maincontent__slider {
+    width: 320px;
+    position: relative;
+  }
+  div.maincontent section div.container div.maincontent__slider div.triangle-right {
+    top: 100px;
+  }
+  div.maincontent section div.container div.maincontent__slider div.triangle-left {
+    top: 100px;
+  }
+  div.maincontent div.container {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  div.maincontent div.container div.maincontent__descr-invitations-wrap {
+    margin-top: 50px;
+    width: 320px;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap {
+    margin: 10px 0 0 10px;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third div.hidden-descr-btn-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second div.hidden-descr-btn-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first div.hidden-descr-btn-first {
+    width: 300px;
+    top: 0;
+    left: 2px;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third button.btn-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second button.btn-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first button.btn-third,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third button.btn-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second button.btn-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first button.btn-second,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-third button.btn-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-second button.btn-first,
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.novisible-first button.btn-first {
+    bottom: -20px;
+    right: -80px;
+    margin: 0 122px 40px 0;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap {
+    display: block;
+    width: 320px;
+  }
+  div.maincontent section.maincontent__fotogallery-descr-wrap div div.image-wrap img {
+    width: 100%;
+  }
+  div.maincontent section.maincontent__social-networ {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div.maincontent section.maincontent__social-networ hr.social-line-f {
+    display: none;
+  }
+  div.maincontent section.maincontent__social-networ div.maincontent__social-img-f {
+    margin: 2px 0 0 42px;
+  }
+  div.maincontent section.maincontent__social-networ hr.social-line-s {
+    display: none;
+  }
+  div.maincontent__address-company-newslet-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  div.maincontent__address-company-newslet-wrap section.maincontent__adress-wrap {
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.maincontent__address-company-newslet-wrap section.maincontent__newsletter-wrap {
+    margin: 30px 0 0 0;
+  }
+  footer {
+    width: 100%;
+  }
+  footer div section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }

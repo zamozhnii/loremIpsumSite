@@ -74,15 +74,19 @@
             <!-- Slider -->
             <div class="container">
             <div class="maincontent__slider">
-                <div class="triangle-right"><span></span></div>
-                <img src="img/book.png" alt="book">
-                <div class="triangle-left"><span></span></div>
+                <div id="slider-btn" class="triangle-right"><span></span></div>
+                <img id="img-first" src="img/book.png" alt="book" class="slider-image active-img">
+                <img id="img-second" src="img/img1.jpg" alt="book" class="slider-image">
+                <img id="img-third" src="img/img2.jpg" alt="book" class="slider-image">
+                <img id="img-fourth" src="img/img3.jpg" alt="book" class="slider-image">
+                <img id="img-fifth" src="img/img4.jpg" alt="book" class="slider-image">
+                <div id="slider-btn" class="triangle-left"><span></span></div>
                 <ul class="maincontent__slider-circle">
-                    <li class="slider-circle-item current-circle"></li>
-                    <li class="slider-circle-item"></li>
-                    <li class="slider-circle-item"></li>
-                    <li class="slider-circle-item"></li>
-                    <li class="slider-circle-item"></li>
+                    <li id="btn-first" class="slider-circle-item current-circle" data-number="img-first"></li>
+                    <li id="btn-second" class="slider-circle-item" data-number="img-second"></li>
+                    <li id="btn-third" class="slider-circle-item" data-number="img-third"></li>
+                    <li id="btn-fourth" class="slider-circle-item" data-number="img-fourth"></li>
+                    <li id="btn-fifth" class="slider-circle-item" data-number="img-fifth"></li>
                 </ul>
             </div>
         </div>
